@@ -1,0 +1,6 @@
+*.pyc
+*/flask/*
+*.csv
+*.json
+*.tsv
+*.log

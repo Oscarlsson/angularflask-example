@@ -1,0 +1,5 @@
+setuptools
+Flask==0.12.2
+uWSGI==2.0.15
+pandas
+psycopg2

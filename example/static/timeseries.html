@@ -1,0 +1,25 @@
+<div ng-controller='timeseriesCtrl as ctrl'>
+
+    <div class='container'>
+        <br>
+        <div class="row">
+            <div ng-repeat="option in ctrl.browsers track by $index">
+                <input type="radio" name="occurrences" ng-value="option" ng-change="ctrl.makeSearch(ctrl.selectedBrowser, ctrl.selectedTimeperiod)"
+                    ng-model="ctrl.selectedBrowser" />
+                <label>{{ option }}</label>
+            </div>
+        </div>
+
+
+
+        <div class="row">
+            <div ng-repeat="option in ctrl.timeperiods track by $index">
+                <input type="radio" name="occurrences" ng-value="option" ng-change="ctrl.makeSearch(ctrl.selectedBrowser, ctrl.selectedTimeperiod)"
+                    ng-model="ctrl.selectedTimeperiod" />
+                <label>{{ option }}</label>
+            </div>
+        </div>
+        <div id="chartContainer" style="height: 320px; width: 100%;"></div>
+
+    </div>
+</div>
